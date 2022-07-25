@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Issues",
+    "pageId": "Metricas Sprint",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: () => {\n\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Metricas Sprint_Issues",
+  "deleted": false,
+  "gitSyncId": "62869ee8309fd93a9bf1c16b_62be0dc8612750023eb002d6"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Previous_sprint_OBJ",
+    "pageId": "Metricas Devs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: () => {\n\t\tlet sql = Issues_SP_previus_sprint.data;\n\t\t\n\t\tlet sp_estimated = sql.map((x) => {\n\t\t\tif (x.Issue_Type === \"Tarea\"){\n\t\t\t\treturn 1;\n\t\t\t}\n\t\t\treturn 0;\n\t\t});\n\t\t\n\t\tlet sp_resolved = sql.map((x) => {\n\t\t\tif (x.Resolution === \"Done\"){\n\t\t\t\treturn x.Story_Points;\n\t\t\t}\n\t\t\treturn 0;\n\t\t});\n\n\t\treturn {\n\t\t\testimated: sp_estimated.reduce((a, b) => a + b, 0), \n\t\t\tresolved: sp_resolved.reduce((a, b) => a + b, 0)\n\t\t};\n\t}\n}",
+    "variables": []
+  },
+  "id": "Metricas Devs_Previous_sprint_OBJ",
+  "deleted": false,
+  "gitSyncId": "62869ee8309fd93a9bf1c16b_62bb6c8220ae3225cef33eb6"
+}

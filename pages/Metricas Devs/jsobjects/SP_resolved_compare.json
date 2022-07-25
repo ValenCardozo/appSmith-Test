@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "SP_resolved_compare",
+    "pageId": "Metricas Devs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tlet a = Issues_SP_resolved.data[0]['points_resolved'];\n\t\tlet b = Previous_sprint_OBJ.myFun1().resolved;\n\t\tlet message;\n\t\tlet color;\n\t\tlet percent = ((Math.abs(a - b) * 100) / a).toFixed(2);\n\t\tconsole.log(a,b);\n\t\tif(a < b) {\n\t\t\tmessage = percent.toString() + \"% more on the last sprint\";\n\t\t\tcolor = '#16a34a';\n\t\t\treturn {message: message,\n\t\t\t\t\t\t\tcolor: color};\n\t\t}\n\t\t\n\t\tif(a > b) {\n\t\t\tmessage = percent.toString() + \"% less on the last sprint\";\n\t\t\tcolor = '#dc2626';\n\t\t\treturn {message: message,\n\t\t\t\t\t\t\tcolor: color};\n\t\t}\n\t\t\n\t\tif(a = b) {\n\t\t\tmessage = \"Equal to the last sprint\";\n\t\t\tcolor = '#a1a1aa';\n\t\t\treturn {message: message,\n\t\t\t\t\t\t\tcolor: color};\n\t\t}\n\t},\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Metricas Devs_SP_resolved_compare",
+  "deleted": false,
+  "gitSyncId": "62869ee8309fd93a9bf1c16b_62bb64e520ae3225cef33c48"
+}

@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "id": "Menu",
+      "isDefault": true
+    },
+    {
+      "id": "Metricas Sprint",
+      "isDefault": false
+    },
+    {
+      "id": "Metricas Devs",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "62869ee8309fd93a9bf1c16b",
+  "color": "#CCCCCC",
+  "icon": "pie-chart",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Metricas Sprint",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: () => {\n\t\tlet sup_estimated = Support_Tasks.data.length;\n\t\tlet sprint_issues = Issues_SP_estimated.data[0]['issues'];\n\t\tlet percent = (sup_estimated * 100) / sprint_issues;\n\t\t\n\t\treturn percent.toFixed(2);\n\t}\n}",
+    "variables": []
+  },
+  "id": "Metricas Sprint_JSObject1",
+  "deleted": false,
+  "gitSyncId": "62869ee8309fd93a9bf1c16b_62be0307612750023eb000cd"
+}

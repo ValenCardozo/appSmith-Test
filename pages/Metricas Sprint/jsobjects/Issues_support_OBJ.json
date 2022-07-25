@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Issues_support_OBJ",
+    "pageId": "Metricas Sprint",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: () => {\n\t\tlet sql = Support_Tasks.data;\n\t\tlet sprint = Get_Sprints.data.find(x => x['ID'] = Sprint_Select.selectedOptionValue);\n\t\tlet issues = sql.map((x) => {\n\t\t\treturn {\n\t\t\t\tdate: moment(x['Resolved']).format('yyyy-MM-DD'),\n\t\t\t\tpoint: x['Story_Points']\n\t\t\t};\n\t\t});\n\t\t\n\t\tlet resol_per_day = _.groupBy(issues, issue => issue['date']);\n\t\t\n\t\treturn resol_per_day;\n\t}\n}",
+    "variables": []
+  },
+  "id": "Metricas Sprint_Issues_support_OBJ",
+  "deleted": false,
+  "gitSyncId": "62869ee8309fd93a9bf1c16b_62bccfbcee7723383d651e14"
+}
